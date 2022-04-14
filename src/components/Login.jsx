@@ -7,7 +7,7 @@ const LoginNavbar = () => {
     return (
         <div className='login-navbar'>
             <div className='logo'>
-                <img src={logo} alt="" />
+                <img src={logo} alt="logo" />
             </div>
             <div>
                 <button className='btn'>Login</button>
@@ -20,14 +20,14 @@ const LoginDetails = () => {
     return (
         <div className="login-section">
             <div >
-                <img className="login-image" src={ctaLogoOne} alt="" />
+                <img className="login-image" src={ctaLogoOne} alt="cta-logo-1" />
             </div>
             <div className="login-details">
                 <button className='login-btn'>GET ALL THERE</button>
                 <p>Get Premier Access to Raya and the Last Dragon for an additional fee with a Disney+ subscription. As of 03/26/21, the price of Disney+ and The Disney Bundle will increase by $1.</p>
             </div>
             <div >
-                <img className="login-image" src={ctaLogoTwo} alt="" />
+                <img className="login-image" src={ctaLogoTwo} alt="cta-logo-2" />
             </div>
         </div>
     )
