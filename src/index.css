@@ -200,8 +200,8 @@ a{
 }
 
 .home-component{
-  /* width: 100vw; */
-  height: 100vh;
+  max-width: 100vw;
+  height: 100%;
   background: url(../src/Disney-Plus/images/home-background.png) ;
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,4 +220,66 @@ a{
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+
+/* .carousel{
+  max-width: 100%;
+} */
+
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10%;
+  /* position: absolute;
+  top: 75%;
+  left: 0; */
+}
+
+.viewer-card{
+  position: relative;
+  max-width: 100%;
+  border: 2px solid #888888;
+  margin: 0 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  /* box-shadow: 0 0px 10px rgb(143, 143, 143); */
+  transition: all .3s ease;
+}
+.viewer-card:hover{
+  /* background: url(../src/Disney-Plus/images/viewers-disney.png) center no-repeat; */
+  transform: scale(1.2);
+  border: 2px solid #fff;
+}
+.viewer-card img{
+  width: 100%;
+  z-index: 1;
+}
+
+.viewer-card video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  border-radius: 1rem;
+  /* opacity: 0; */
+  z-index: -1;
+}
+/* .viewer-card video:hover{
+  opacity: 1;
+  z-index: -1;
+} */
+
+@media screen and (max-width: 768px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+  }
+  .viewer-card img{
+    height: 50%;
+  }
 }

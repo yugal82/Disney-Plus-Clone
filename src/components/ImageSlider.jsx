@@ -4,11 +4,15 @@ import '../index.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+
+
 import sliderOne from '../Disney-Plus/images/slider-scale.jpg'
 import sliderTwo from '../Disney-Plus/images/slider-badging.jpg'
 import sliderThree from '../Disney-Plus/images/slider-badag.jpg'
 import sliderFour from '../Disney-Plus/images/slider-scales.jpg'
-import Navbar from "./Navbar";
+
+
+// import Navbar from "./Navbar";
 const SliderContainer = (props) => {
     return(
         <>
@@ -33,8 +37,8 @@ const ImageSlider = (props) => {
 
     return (
         <div>
-            <Navbar/>
-            <Carousel {...settings} >
+            {/* <Navbar/> */}
+            <Carousel className="carousel" {...settings} >
                 <SliderContainer url = {sliderOne} />
                 <SliderContainer url = {sliderTwo} />
                 <SliderContainer url = {sliderThree} />
@@ -46,6 +50,7 @@ const ImageSlider = (props) => {
 
 
 const Carousel = styled(Slider)`
+    width: 100vw;
     margin-top: 20px;
     position: relative;
     top:72px;

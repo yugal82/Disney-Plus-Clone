@@ -24,7 +24,7 @@ const LoginNavbar = () => {
             </div>
             <div>
                 {/* <Link to='/home'><button className='btn' onClick={() => {}}>Login</button></Link> */}
-                <button className='btn' onClick={() => {}}>Login</button>
+                <a className='btn' href="/home">Login</a>
             </div>
         </div>
     )
