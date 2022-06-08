@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 html{
   scroll-behavior: smooth;
 }
@@ -9,7 +11,7 @@ html{
 body {
   background: #040714;
   color: #f9f9f9;
-  font-family: Avenir-Roman, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -49,7 +51,9 @@ a{
   }
 }
 
-
+::-webkit-scrollbar {
+  width: 0px;
+}
 
 .login-navbar{
   width: 100%;
@@ -139,10 +143,10 @@ a{
 }
 
 .navbar-section{
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   width: 100%; 
   height: 72px;
   display: flex;
@@ -206,11 +210,13 @@ a{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* margin-top: -5rem; */
 }
 .slider-img{
   width: 95%;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 10px;
+  margin-top: -4rem;
 }
 .slider-img:hover{
   border: 2px solid white;
@@ -224,6 +230,7 @@ a{
 
 /* .carousel{
   max-width: 100%;
+  margin-top: 5rem;
 } */
 
 .container{
@@ -282,4 +289,35 @@ a{
   .viewer-card img{
     height: 50%;
   }
+}
+
+.recommended{
+  width: 100%;
+}
+.recommended h2{
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 1rem 1.6rem;
+}
+
+.recommend-card{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* width: 25% ; */
+  padding: 0 1rem;
+}
+.recommend-card img{
+  width: 285px;
+  height: 150px;
+  margin: 0 .8rem;
+  border-radius: 1rem;
+  border: 2px solid #888888;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.recommend-card img:hover{
+  border: 2px solid #fff;
+  transform: scale(1.1);
 }

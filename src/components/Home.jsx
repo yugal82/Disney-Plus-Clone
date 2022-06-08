@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import '../index.css';
 import ImageSlider from './ImageSlider';
 import Viewers from './Viewers';
+import Recommend from './Recommend';
+import Originals from './Originals';
 
 
 const Home = () => {
@@ -11,6 +13,8 @@ const Home = () => {
         <Navbar/>
         <ImageSlider/>
         <Viewers />
+        <Recommend />
+        <Originals />
     </div>
   )
 }

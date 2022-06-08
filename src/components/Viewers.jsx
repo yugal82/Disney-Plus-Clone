@@ -10,40 +10,17 @@ import marvelMp4 from '../Disney-Plus/videos/marvel.mp4'
 import pixarMp4 from '../Disney-Plus/videos/pixar.mp4'
 import starWarsMp4 from '../Disney-Plus/videos/star-wars.mp4'
 import nationalMp4 from '../Disney-Plus/videos/national-geographic.mp4'
+import ViewerCard from './ViewerCard'
+
 const Viewers = () => {
     return (
         <>
             <div className="container">
-                <div className='viewer-card'>
-                    <img src={viewerOne} alt="hello" />
-                    <video autoPlay={true} loop={true} playsInline={true} >
-                        <source src={marvelMp4} type='video/mp4' />
-                    </video>
-                </div>
-                <div className='viewer-card'>
-                    <img src={viewerTwo} alt="hello" />
-                    <video autoPlay={true} loop={true} playsInline={true} >
-                        <source src={pixarMp4} type='video/mp4' />
-                    </video>
-                </div>
-                <div className='viewer-card'>
-                    <img src={viewerThree} alt="hello" />
-                    <video autoPlay={true} loop={true} playsInline={true} >
-                        <source src={starWarsMp4} type='video/mp4' />
-                    </video>
-                </div>
-                <div className='viewer-card'>
-                    <img src={viewerFour} alt="hello" />
-                    <video autoPlay={true} loop={true} playsInline={true} >
-                        <source src={disneyMp4} type='video/mp4' />
-                    </video>
-                </div>
-                <div className='viewer-card'>
-                    <img src={viewerFive} alt="hello" />
-                    <video autoPlay={true} loop={true} playsInline={true} >
-                        <source src={nationalMp4} type='video/mp4' />
-                    </video>
-                </div>      
+                <ViewerCard imgSrc = {viewerOne} mp4Src = {marvelMp4} />
+                <ViewerCard imgSrc = {viewerTwo} mp4Src = {pixarMp4} />
+                <ViewerCard imgSrc = {viewerThree} mp4Src = {starWarsMp4} />
+                <ViewerCard imgSrc = {viewerFour} mp4Src = {disneyMp4} />
+                <ViewerCard imgSrc = {viewerFive} mp4Src = {nationalMp4} />
             </div>
         </>
     )
