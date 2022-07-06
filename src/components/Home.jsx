@@ -13,8 +13,9 @@ const Home = () => {
         <Navbar/>
         <ImageSlider/>
         <Viewers />
-        <Recommend />
-        <Originals />
+        <Recommend title='Recommended for you'/>
+        <Originals title='Originals'/>
+        <Recommend title='New to Disney+'/>
     </div>
   )
 }

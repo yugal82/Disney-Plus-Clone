@@ -4,11 +4,11 @@ import imageOne from '../Disney-Plus/images/DTS.jpg'
 import imageTwo from '../Disney-Plus/images/Avengers.jpg'
 import imageThree from '../Disney-Plus/images/drivetosurvive.png'
 import imageFour from '../Disney-Plus/images/Avengers-endgame.jpg'
-const Recommend = () => {
+const Recommend = ({title}) => {
     return (
         <>
             <div className='recommended'>
-                <h2>Recommended for you</h2>
+                <h2>{title}</h2>
                 <div className='recommend-card'>
                     <RecommendCard imgSrc={imageOne} />
                     <RecommendCard imgSrc={imageTwo} />
